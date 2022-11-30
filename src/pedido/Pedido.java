@@ -46,13 +46,13 @@ public class Pedido {
 				pedido.hijos.add(perro);
 			}else if(orden.get(i)==3) {
 				if (orden.get(i+1) ==1) {
-					Leaf tipoPizza = new Leaf("carnes", 6000);
+					Leaf tipoPizza = new Leaf("Pizza carnes", 6000);
 					pizza.hijos.add(tipoPizza);
 				}else if (orden.get(i+1) ==2) {
-					Leaf tipoPizza = new Leaf("hawaihana", 6000);
+					Leaf tipoPizza = new Leaf("Pizza hawaihana", 6000);
 					pizza.hijos.add(tipoPizza);
 				}else if (orden.get(i+1) ==3) {
-					Leaf tipoPizza = new Leaf("pollo con champiñones", 6000);
+					Leaf tipoPizza = new Leaf("Pizza pollo con champiï¿½ones", 6000);
 					pizza.hijos.add(tipoPizza);
 				}
 				factura += pizza.executeName()+" "+especificaciones.get(aux)+"     $"+pizza.execute();
